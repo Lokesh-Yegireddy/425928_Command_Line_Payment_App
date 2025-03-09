@@ -14,10 +14,9 @@ public class Main {
 		System.out.println("Welcome To CommandLine Payment App !");
 		boolean loop=true;
 		while(loop) {
-			
 		System.out.println("1.Registration");
 		System.out.println("2.Login");
-		System.out.println("3.Display All System Users");
+		System.out.println("3.Number of System Users");
 		System.out.println("4.Exit From System");
 		System.out.println("CHoose Your Choice");
 		int choice=sc.nextInt();
@@ -58,7 +57,7 @@ public class Main {
 		}
 		
 		if(choice!=4) {
-			System.out.println("Do You Want To Continue...? y/n");
+			System.out.println("Do You Want To Continue To Home Page y/n");
 			char proceed=sc.next().charAt(0);
 			if(proceed=='y')
 			{
@@ -99,7 +98,7 @@ public class Main {
 	
 	public static void loginMenu(Scanner sc,UserDetails user,UserActionImp uai) {
 		BankActionImp bai=new BankActionImp();
-		System.out.println("Welcome !"+user.getFirstName() + user.getLastName());
+		System.out.println("Welcome "+user.getFirstName() + user.getLastName()+"!");
 		System.out.println("1.View Your Profile");
 		System.out.println("2.Bank Accounts");
 		System.out.println("3.Transactions");

@@ -89,7 +89,7 @@ public class BankAccount {
 		     break;
 		     
 	  case 2:
-		  sc.nextLine();
+		   sc.nextLine();
 		   getAllBanks(sc,user,bai);
 		   break;
 		   
@@ -107,7 +107,7 @@ public class BankAccount {
 		 System.out.println("Invalid Choice..!");
 		     
 	  } 
-	  System.out.println("Do You Want To Continue ? y/n");
+	  System.out.println("Do You Want To Continue Bank Section ? y/n");
 	  char proceed=sc.next().charAt(0);
 	  if(proceed=='y')
 	  {

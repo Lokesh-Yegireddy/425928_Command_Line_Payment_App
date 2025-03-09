@@ -1,7 +1,7 @@
 package com.entity;
 
 public class BankAccountDetails {
-private static int bankAccountId=2001;
+private static int bankAccountId=2000;
 private long accountNumber;
 private String ifscCode;
 private String accountStatus;
